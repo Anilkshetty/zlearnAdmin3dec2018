@@ -1,0 +1,1806 @@
+<html lang="en">
+<head>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://zlearn.in/assets/css/dropify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="../css/admin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+ <div class="navbar-fixed">
+    <nav>
+        <div class="nav-wrapper grey darken-4">
+            <a href="#" class="brand-logo"><img src="../image/logo-white.png" alt="" class="responsive-img" style="height:65px;"> </a>
+            <a href="#" class="button-collapse hide-on-large" data-activates="slide-out"><i class="material-icons">menu</i></a>
+
+
+       
+            <ul class="left hide-on-med-and-down" style="padding-left:255px;">
+                        <nav class="z-depth-0 " style="height:40px; margin-top:12px; width: 50%; ">    
+                                <div class="nav-wrapper grey darken-4">
+                                    <form>
+                                    <div class="input-field  z-depth-1">
+                                        <input id="search" type="search"  placeholder="Explore Zelern" autocomplete="off" required >
+                                        <label class="label-icon" for="search"><i class="material-icons black-text" style="margin-top:-22px;">search</i></label>
+                                        <i class="material-icons" style="margin-top:-12px; font-size:20px;">close</i>
+                                    </div>
+                                    </form>
+                                </div>
+                        </nav>                
+            </ul> 
+
+            <ul class="right">
+                <li><a href="#" class="dropdown-profilebutton " data-activates="dropdown-profile"><img src="../image/person.jpg" alt="" class="responsive-img circle myProfileImage"></a></li>
+                <li><a href="#" class="dropdown-button" data-activates="dropdown-notification"><i class="material-icons">notifications_active</i></a></li>
+                <li class="hide-on-small-only"><a href="#"  class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="fa fa-sign-out" style="font-size:25px;"></i></a></li>
+            </ul>  
+            
+            <!-- dropdown structure for profile -->
+
+            <ul id="dropdown-profile" class="dropdown-content z-depth-3 dropdown-profile" >
+
+                    <li><a href="#"><i class="fa fa-user left dropdwncolor" aria-hidden="true"></i> Profile</a></li>
+                    <li><a href="#"><i class="fa fa-cogs left dropdwncolor" aria-hidden="true"></i> Settings</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle left dropdwncolor" aria-hidden="true"></i> Help</a></li>
+                    <li class="divider"></li>
+                    <li><a href="/logout/"><i class="fa fa-sign-out left dropdwncolor" aria-hidden="true"></i> Logout</a></li>
+            </ul>
+
+            <!-- drop structure for notification -->
+
+            <ul id="dropdown-notification" class="dropdown-content dropdown-notification">
+                <li><a href="#!" class="" style="font-size:15px;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">NOTIFICATION<span class="new badge right pink">1</span></a></li>
+            </ul>
+            
+        </div> 
+   </nav>
+</div>
+<!-- header end -->
+<ul class="side-nav fixed mysidenav" id="slide-out" style="height: calc(100% - 5px);">
+    <li class="grey lighten-3">
+        <div class="user-view ">
+            <div class="background hoverable">
+                <!-- <img src="../image/pexels.jpeg" alt=""  class="responsive-img"> -->
+            </div>
+            <a href="#"><img src="../image/person.jpg" alt="" class="responsive-img circle z-depth-2"></a>
+            <a href="#"><span class="name orange-text" style="font-weight:bold;">ARCHANA BM</span></a>
+            <a href="#"><span class="email black-text" style="font-family: monospace;padding: 0;font-weight:bold;">Archan@gmail.com</span></a>
+            <a href="#"><span class="name black-text" style="font-family:monospace;margin: 0;padding: 0;font-weight:bold;">BNMIT COLLEGE</span></a>
+        </div>
+        <div class="divider"></div>
+    </li>
+
+    <li>
+        <a href="#"><i class="fa fa-tachometer myicon" aria-hidden="true"></i>Dashboard</a>
+    </li>
+
+    <li id="university">
+            <a href="#"><i class="fa fa-university myicon" aria-hidden="true"></i>University </a>
+    </li>
+
+    <li id="college">      
+            <a href="#"><i class="fas fa-graduation-cap myicon" id="bg7" aria-hidden="true"></i>College </a>         
+    </li>
+
+    <li id="studentform">      
+        <a href="#"><i class="fa fa-user-circle-o myicon" aria-hidden="true"></i>Student Form </a>         
+    </li>
+
+    
+
+    <li id="module">  
+        <a href="#"><i class="fa fa-black-tie myicon"  aria-hidden="true"></i>Module</a>          
+   </li> 
+
+   <li id="test">
+    <a href="#"><i class="fas fa-poll-h myicon"  aria-hidden="true"></i>Test</a>           
+  </li>
+
+    <li id="question">        
+        <a href="#"><i class="fa fa-question-circle myicon" aria-hidden="true"></i>Question</a>         
+    </li>
+
+    <li>
+            <a href="#"><i class="fas fa-sticky-note myicon" aria-hidden="true"></i>Ebook</a>            
+    </li>
+
+     <li id="Schedule">
+            <a href="#"><i class="fa fa-cubes myicon" aria-hidden="true"></i>ScheduleUpload</a>            
+    </li>
+
+</ul>
+
+
+<!-- sidenav end -->
+<main>
+<div class="main">
+    <!-- for universitypage start -->
+    <div class="mymaincontainer" id="myuniversity">
+            <h3 style="color:grey;">Universities
+                    <a class="btn-floating btn-large waves-effect waves-light red pull-right tooltipped btn"  data-position="left" data-delay="50" data-tooltip="Add College" href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                    <hr>
+            </h3>
+     <div class="row">
+         <div class="col s12 m6  l3">
+             <div class="card hoverable pink">
+                 <div class="card-content mycard-content center">
+                     <p  style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon  circle" aria-hidden="true"></i>Jawaharlal Nehru Technological University</p>
+                     <h5  style="color:white;">VTU</h5>
+                     <p style="color:white;"><i class="fa fa-phone-square main-icon  circle" style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+                 </div>
+                 <div class="card-content" style="padding: 2px !important;">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modaluniversity"><i class="material-icons">edit</i></a>
+                 </div>
+             </div>
+         </div>
+
+         <div class="col s12 m6 l3">
+            <div class="card hoverable orange">
+                <div class="card-content mycard-content center">
+                    <p style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon  circle"></i>Visvesvaraya Technological University</p>
+                    <h5 style="color:white;">VTU</h5>
+                    <p style="color:white;"><i class="fa fa-phone-square main-icon  circle" style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+
+                </div>
+                <div class="card-content" style="padding: 2px !important;">
+                     <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modaluniversity"><i class="material-icons">edit</i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+                <div class="card hoverable cyan">
+                    <div class="card-content mycard-content center">
+                        <p style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon  circle"></i>Bangalore Central University</p>
+                        <h5 style="color:white;">VTU</h5>
+                        <p style="color:white;"><i class="fa fa-phone-square main-icon  circle" style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+    
+                    </div>
+                    <div class="card-content" style="padding: 2px !important;">
+                         <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modaluniversity"><i class="material-icons">edit</i></a>
+                    </div>
+                </div>
+        </div>
+
+        
+        <div class="col s12 m6 l3">
+                <div class="card hoverable purple">
+                    <div class="card-content mycard-content center">
+                        <p style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon  circle"></i>Adikavi Nannaya University</p>
+                        <h5 style="color:white;">AIT</h5>
+                        <p style="color:white;"><i class="fa fa-phone-square main-icon  circle" style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+    
+                    </div>
+                    <div class="card-content" style="padding: 2px !important;">
+                         <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger" href="#modaluniversity"><i class="material-icons">edit</i></a>
+                    </div>
+                </div>
+        </div>
+   </div>       
+  
+<!-- Modal Structure -->
+<div id="modaluniversity" class="modal">
+    <div class="modal-content">
+        <h4>Edit University details</h4>
+        <hr>
+
+     <div class="row">
+        <form class=" col s12" id="" method="post" action="">
+            <input type="hidden" value="" name="" id="">    
+            <div class="modal-content" style="padding:5px !important;">
+                <div class="row">
+                        <div class="input-field col s12">
+                                <select>
+                                    <option value="" disabled selected>Choose your College</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>University (mandatory)</label>
+                        </div>
+                    <div class="input-field col s12">
+                        <input id="name" name="name" type="text" class="validate" value="Adichunchanagiri Institute of Technology">
+                        <label for="name" class="active">College Name (mandatory)</label>
+                    </div>
+                    <div class="input-field col s12">
+
+                        <input id="code" name="code" type="text" class="validate" required="" value="AIT">
+                        <label for="user" class="active">College Code (mandatory)</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input name="email" type="text" class="validate" value="contactus@aitckm.in">
+                        <label class="active">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input name="phone" type="text" class="validate" value="082622 20444">
+                        <label class="active">Phone</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input name="address" type="text" class="validate" value="KM Road, Chickmagaluru, Karnataka 577102">
+                        <label class="active">Address</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <textarea  name="description" type="text" class="materialize-textarea">Sri Sri Sri Balagangadharanatha Swamiji’s efforts have been focused on the basic necessities like Anna, Akshara and Arogya, i.e., Food, Education and Health.His Holiness is involved in a number of programmes like feeding more than twenty thousand people free a day. It is because devotees are fed incessantly, Sri Math is also called as ‘Annadani Math’. The other programmes are five-crore plantations project, relief works during natural disasters and many more.Sri Swamiji has established more than four hundred recognized and highly regarded Educational Institutions, where more than seventy thousand students are quenching their thirst of knowledge; a significant number are from rural areas.
+                            <br><br>
+                            Sri Sri Sri Nirmalanandanatha Mahaswamiji is an ardent disciple of His Holiness Jagadguru Padmabhushan Bhairavaikya Sri Sri Sri Dr. Balagangadharanatha Mahaswamiji (Sri Guruji), 71st Pontiff of Sri Adichunchanagiri Mahasamsthana Matt. Sri Swamiji, with a Master’s degree in Structural Engineering, influenced by life’s practical philosophy of Sri Guruji and with zeal to understand the eternal truth has earned Master’s degree in Sanskrit Advaita Vidwat. Sri Swamiji was initiated into holy ‘Sanyasa’ order in the year 1998. With the Divine Blessings of Sri Guruji, Sri Swamiji has helped to establish and served institutions ranging from pre-nursery to research centers in Chickballapur and Kolar Districts of Karnataka, providing education to more than 22,000 students.
+                            <br><br>
+                            
+                            Adichunchanagiri Institute of Technology is an engineering college in Chikkamagaluru, Karnataka, India. It was founded in 1980 by Sri Adichunchanagiri Maha Samsthana Math</textarea>
+                        <label class="active">Description</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <div class="input-field col s6">
+                                <input name="author_name1" type="text" class="validate" value="His Holiness Jagadguru Sri Sri Sri Dr. Nirmalanandanatha Mahaswamiji">
+                                <label class="active">Author Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input name="designation1" type="text" class="validate" value="President, Sri Adichunchanagiri Shikshana Trust">
+                                <label class="active">Designation</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea name="message1" type="tel" class="materialize-textarea validate" style="height: 44px;">With the Divine Blessings of His Holiness Jagadguru Padmabhushan Sri Sri Sri Dr. Balagangadharanatha Mahaswamiji</textarea>
+                                <label class="active">Message1</label>
+                        </div> 
+                    </div>
+                    <div class="input-field col s12">
+                        <input name="imgurl1" type="text" class="validate" value="http://rjss.org.in/images/nirmalanandanatha-swamiji.png">
+                            <label class="active">Image url1</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <div class="input-field col s6">
+                            <input name="author_name2" type="text" class="validate" value="Dr. C.K. Subbaraya">
+                            <label class="active">Author Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input name="designation2" type="text" class="validate" value="Principal">
+                            <label class="active">Designation</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea name="message2" type="tel" class="materialize-textarea validate"></textarea>
+                            <label>Message2</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                        <input name="imgurl2" type="text" class="validate" value="https://i.ytimg.com/vi/dAQwl49C0yw/hqdefault.jpg">
+                        <label class="active">Image url2</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <div class="input-field col s6">
+                            <input name="author_name3" type="text" class="validate" value="Dr. M B Anandaraju">
+                            <label class="active">Author Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input name="designation3" type="text" class="validate" value="Director - Corporate Affairs,HR Training &amp; Placement,BGS Group of Institutions">
+                            <label class="active">Designation</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea name="message3" type="tel" class="materialize-textarea validate"></textarea>
+                            <label>Message3</label>
+                        </div>
+                    </div>
+                    <div class="input-field col s12">
+                        <input name="imgurl3" type="text" class="validate">
+                        <label>Image url3</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col l6">
+                            <button class=" btn waves-effect waves-light blue" type="submit">Update</button>
+                    </div>
+                    <div class="col l6">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn right pink ">Close</a>
+                    </div>   
+                </div>
+
+            </div>
+         </form>
+        </div>
+     </div>
+ </div>
+</div>
+<!-- my university end -->
+<!-- start college page -->
+
+<div class="mymaincontainer" id="mycollege">
+    <div class="row">
+        <h3 class="grey-text text-darken-1">Colleges <a href="#"class="btn-floating right btn-large red waves-effect waves-light tooltipped" id="addcollege-btn" data-position="left" data-delay="50" data-tooltip="Add college"><i class="fa fa-plus" aria-hidden="true"></i></a></h3>
+        <hr>
+    </div>
+
+
+    <div class="row">
+        <div class="col s12 m6 l3">
+            <div class="card cyan">
+                <div class="card-content center mycard-content">
+                    <p style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon"></i> Adichunchanagiri Institute of Technology</p>
+                    <h5 style="color:white;">AIT</h5>
+                    <p style="color:white;"><i class="fa fa-phone-square main-icon  circle "  style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+                </div>
+                <div class="card-content" style="padding: 2px !important;">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="edit" href="#modalcollege"><i class="material-icons">edit</i></a>
+                 </div>
+            </div>
+        </div>
+    
+
+        <div class="col s12 m6 l3">
+                <div class="card purple">
+                    <div class="card-content center mycard-content">
+                        <p style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon"></i> Adichunchanagiri Institute of Technology</p>
+                        <h5 style="color:white;">AIT</h5>
+                        <p style="color:white;"><i class="fa fa-phone-square main-icon  circle "  style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+                    </div>
+                    <div class="card-content" style="padding: 2px !important;">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="edit" href="#modalcollege"><i class="material-icons">edit</i></a>
+                     </div>
+                </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+                <div class="card grey">
+                    <div class="card-content center mycard-content">
+                        <p style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon"></i> Adichunchanagiri Institute of Technology</p>
+                        <h5 style="color:white;">AIT</h5>
+                        <p style="color:white;"><i class="fa fa-phone-square main-icon  circle "  style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+                    </div>
+                    <div class="card-content" style="padding: 2px !important;">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="edit" href="#modalcollege"><i class="material-icons">edit</i></a>
+                     </div>
+                </div>
+        </div>
+
+        <div class="col s12 m6 l3">
+                <div class="card orange">
+                    <div class="card-content center mycard-content">
+                        <p style="font-size:20px;color:white;"><i class="fas fa-graduation-cap main-icon"></i> Adichunchanagiri Institute of Technology</p>
+                        <h5 style="color:white;">AIT</h5>
+                        <p style="color:white;"><i class="fa fa-phone-square main-icon  circle "  style="padding:10px;"  aria-hidden="true"></i>08254313476</p>
+                    </div>
+                    <div class="card-content" style="padding: 2px !important;">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red modal-trigger tooltipped" data-position="left" data-delay="50" data-tooltip="edit" href="#modalcollege"><i class="material-icons">edit</i></a>
+                     </div>
+                </div>
+        </div>
+
+<!--modal strucuture -->
+<div id="modalcollege" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <h3>Edit College details</h3>
+            <hr>
+        </div>
+        <div class="row s12">
+            <div class="input-field">
+                <select>
+                    <option value=""disabled selected>Choose your option</option>
+                    <option value="1">Adichunchanagiri Institute of Technology</option>
+                    <option value="2">Adichunchanagiri Institute of Technology</option>
+                    <option value="3">Adichunchanagiri Institute of Technology</option>
+                    <option value="4">Adichunchanagiri Institute of Technology</option>
+                </select>
+                <label>University (mandatory)</label>
+            </div>
+        </div>
+        <div class="row s12">
+                <div class="input-field">
+                    <input id="name"  type="text" class="validate" value="Adichunchanagiri Institute of Technology">
+                    <label for="name" class="active">College Name (mandatory)</label>
+                </div>
+        </div>
+        <div class="row s12">
+            <div class="input-field">
+                <input type="text" class="validate" value="AIT">
+                <label for="name" class="active">College Code (mandatory)</label>
+            </div>
+        </div>
+        <div class="row s12">
+            <div class="input-field">
+                <input type="text" class="validate" value="contactus@aitckm.in">
+                <label for="name">Email</label>
+            </div>
+        </div>
+
+        <div class="row ">
+                <div class="input-field s12">
+                    <input type="text" class="validate" value="08254321">
+                    <label for="name">Email</label>
+                </div>
+        </div>
+
+        <div class="row ">
+                <div class="input-field s12">
+                    <input type="text" class="validate" value="KM Road, Chickmagaluru, Karnataka 577102">
+                    <label for="name">Email</label>
+                </div>
+        </div>
+        <div class="row">
+            <div class="input-field s12">
+                <textarea name="" id="" cols="30" rows="10" class="materialize-textarea" style="text-align:justify; color:blue;">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam neque voluptatibus est quidem rem, quibusdam quis ipsa repellat iusto mollitia atque dignissimos possimus saepe iure reprehenderit aperiam harum illum ut. Provident maiores deserunt maxime repellendus cumque, asperiores, architecto harum hic ipsa voluptatibus accusantium aperiam reiciendis. Aperiam labore ducimus quas ipsam magni! Repellat sed optio, reiciendis hic maxime velit unde. Eaque temporibus a quod tempora ea non sequi ipsam quas aliquid commodi. Dolore rerum repellat explicabo eum debitis adipisci suscipit ipsum quas pariatur iste quos sed totam architecto vero corporis, id voluptas at, quidem, aliquam soluta beatae odit? Maxime corrupti eos perferendis veniam culpa dolore esse sit porro quo, quod sed illum. Commodi at iusto itaque quae expedita ut impedit provident deleniti nostrum iste enim voluptas pariatur necessitatibus nam error quaerat velit totam magni facere, perspiciatis atque? Quod assumenda minima culpa, recusandae laudantium nam voluptates necessitatibus earum aut, sint, architecto eaque praesentium. Officiis inventore, minima laborum tenetur rem, temporibus nulla architecto eligendi veritatis recusandae ullam similique eaque. Incidunt tenetur, voluptatibus, deserunt eos dolorum doloremque sequi labore quas cum facere ut cumque quam, est at. Impedit deserunt velit suscipit aperiam est nihil quasi sint culpa cum eum architecto, modi ullam obcaecati ut incidunt voluptas mollitia tempora officiis alias exercitationem vitae! Consectetur rerum totam consequatur voluptate officiis reprehenderit. Labore aliquid quo error vel. Odit officia voluptatem nobis a mollitia, cupiditate eos obcaecati alias voluptate molestias expedita excepturi repellat hic error ab minima unde quasi, nostrum vel dolorem optio ducimus? Facere, unde illum. Blanditiis iste dicta rerum pariatur, sed natus nostrum. Omnis dolor recusandae minus atque in. Aut quam saepe velit quibusdam possimus labore, quas quod aspernatur voluptatem tempore suscipit odio cumque tenetur excepturi sapiente modi, molestiae provident qui vel deserunt id impedit et nam. Magnam, similique cupiditate ipsum beatae laborum, est nisi dolor ullam alias veritatis eligendi incidunt quia quod repellendus voluptatum? Quas, at ratione quaerat aut nihil cupiditate suscipit nemo eveniet quos enim, sint, vitae quae culpa omnis. Laborum laudantium maiores excepturi aliquam laboriosam eius et praesentium sed? Quam sint porro aliquid, molestiae eveniet placeat exercitationem dolorum voluptatem, ratione, perferendis dicta repudiandae expedita adipisci ipsam! Architecto, aspernatur! Officia consequuntur corrupti dolores, non deleniti illum maxime iure explicabo hic culpa nisi modi magnam repellat corporis quo ipsum tempore delectus? Corrupti at ex mollitia quas, nulla aliquam alias. Harum reprehenderit obcaecati adipisci aliquam tenetur ipsum quo ipsa aut ipsam repudiandae quibusdam aliquid dignissimos enim fuga, voluptatem qui amet blanditiis atque non ad voluptas dicta eum! Unde velit culpa impedit! Veritatis sequi exercitationem magni ea doloremque eligendi nostrum id hic eum rem magnam reiciendis, quidem consequatur quas quisquam impedit nisi inventore saepe labore consectetur? Odio mollitia recusandae, at vel laboriosam possimus dicta velit. Fugit, velit voluptatem illo dignissimos culpa quibusdam reiciendis optio perspiciatis ad aliquid facere amet ipsam vitae nesciunt quae consectetur quia maxime, porro quam, praesentium in explicabo. Voluptas fugit eos explicabo sapiente veniam illum autem nostrum corporis ut, tempore aut, rem perferendis voluptates dolores repellendus molestias pariatur? Obcaecati delectus ipsam exercitationem corporis molestias temporibus dolorum cupiditate sequi ullam error reprehenderit doloribus deserunt, rerum alias explicabo odit dolor eligendi vel suscipit aperiam voluptas beatae ipsum? Quis omnis ea rem. Fuga animi, sequi provident reiciendis maxime eius incidunt nemo magnam ullam deleniti nobis, odit dolorem iusto fugiat iure. Assumenda maxime hic rerum fuga voluptate, voluptatibus aut dignissimos a, voluptas cupiditate et similique ut officiis dolor asperiores dolores. Totam ipsum rem omnis corrupti unde aut officia quasi suscipit, tempora debitis quam harum. Earum saepe minima ipsa tempora quisquam voluptatem, ex doloribus tenetur, sequi quae perspiciatis ipsum inventore non! Ad minus illum sit deserunt porro cumque nam esse, laborum, voluptates ducimus molestias. Dolor illo quisquam nemo ratione animi eos aliquam cum, molestiae fuga odit ipsam debitis atque perspiciatis placeat expedita doloribus cupiditate! Soluta assumenda ratione voluptatem iusto debitis numquam laudantium eum minus officiis repellendus dolor quisquam rerum tempore, enim nobis dicta ipsam sapiente perferendis obcaecati odio adipisci, blanditiis fuga! Quia nulla tempora autem eius itaque molestiae. Voluptatibus dolorem magni, nostrum eum quos quas blanditiis explicabo officia nam perspiciatis esse nulla possimus quae omnis aliquid quasi dignissimos ratione totam? Consequuntur officia, delectus voluptatum ipsa reprehenderit accusantium provident! Nostrum quod dolore maxime deleniti ipsa eum repudiandae! Facere quidem ab sed explicabo similique, nulla inventore? Asperiores, ipsum est rem illo repellat veritatis explicabo, id quisquam, ab possimus iste qui? Quaerat officiis molestias deleniti commodi ad architecto eveniet ratione sint dignissimos nesciunt amet saepe culpa fugiat quis quas, suscipit rem adipisci esse facilis, incidunt quibusdam. Aliquam, error eveniet aperiam ut minima amet porro id! Neque laborum exercitationem earum ipsa distinctio corporis explicabo, asperiores facere rerum a, ipsum quasi, natus pariatur ad cum aut sunt consequatur nesciunt eligendi! Officiis dignissimos consequuntur consectetur distinctio maxime quis quo, itaque nihil unde. Saepe accusamus in eum eveniet omnis soluta similique consectetur necessitatibus quod animi architecto, ea ut sequi reiciendis. Vitae nesciunt tempore, ipsam ipsum similique magni eos a, quod eligendi nihil adipisci repellat? Debitis mollitia voluptatem corrupti corporis quos esse aperiam non ad veniam nam quasi facere eveniet modi iusto et quidem sunt, assumenda cupiditate accusantium, vero exercitationem eum ab iure. Nulla at, quibusdam natus tenetur distinctio hic voluptatibus. Deserunt laudantium ex iure maiores dolore modi, unde atque delectus recusandae quaerat at temporibus impedit labore possimus! Dignissimos odit est distinctio quia. Nemo reprehenderit perferendis unde, dolorem repudiandae laboriosam officiis? Dignissimos, architecto. Dolore commodi delectus veritatis minima vero quisquam mollitia voluptatem aliquam animi quasi iusto illo, culpa maxime id? Fugit, nulla excepturi! Amet asperiores doloremque tempora molestias eligendi consequuntur, libero voluptates voluptas tenetur possimus assumenda dolores est atque ad, repellendus, omnis incidunt adipisci ipsam quibusdam earum nam neque odio fugiat delectus. Repellendus at pariatur aperiam impedit natus. Explicabo amet sapiente impedit! Officia nam, debitis excepturi adipisci, quia repellendus natus voluptatum sapiente quasi illum nesciunt quae beatae aliquam ex deserunt neque perspiciatis ipsa doloremque iusto enim fugiat accusamus in quidem dolorum. Libero sit nulla, ipsam cupiditate in quis quasi minus reprehenderit, ad perferendis voluptatem. Voluptatem, ex culpa asperiores provident et animi dolores modi illum, temporibus beatae doloremque!
+                </textarea>
+                <label for="textarea1">Description</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col l6">
+                    <div class="input-field">
+                            <input type="text" class="validate" value="His Holiness Jagadguru Sri Sri Sri Dr. Nirmalanandanatha Mahaswamiji">
+                            <label for="name">Author Name</label>
+                        </div>
+            </div>
+            <div class="col l6">
+                    <div class="input-field">
+                            <input type="text" class="validate" value="President, Sri Adichunchanagiri Shikshana Trust">
+                            <label for="name">Designation</label>
+                    </div>
+            </div>                
+        </div>
+        <div class="row">
+            <div class="col s12 input-field">
+                <textarea name="" id="" class="materialize-textarea">
+                   the Divine Blessings of His Holiness Jagadguru Padmabhushan Sri Sri Sri Dr. Balagangadharanatha Mahaswamiji
+                </textarea>
+                <label for="name">Message</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 input-field">
+                <input type="text" value="http://rjss.org.in/images/nirmalanandanatha-swamiji.png" class="validate">
+                <label for="name">Image url1</label>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col l6">
+                        <div class="input-field">
+                                <input type="text" class="validate" value="Dr. M B Anandaraju">
+                                <label for="name">Author Name</label>
+                            </div>
+                </div>
+                <div class="col l6">
+                        <div class="input-field">
+                                <input type="text" class="validate" value="Principal">
+                                <label for="name">Designation</label>
+                        </div>
+                </div>                
+        </div>
+
+        <div class="row">
+                <div class="col s12 input-field">
+                    <textarea name="" id="" class="materialize-textarea">
+                       
+                    </textarea>
+                    <label for="name">Message2</label>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col s12 input-field">
+                    <input type="text" value="http://rjss.org.in/images/nirmalanandanatha-swamiji.png" class="validate">
+                    <label for="name">Image url1</label>
+                </div>
+        </div>
+
+        <div class="row">
+                <div class="col l6">
+                        <div class="input-field">
+                                <input type="text" class="validate" value="Dr. M B Anandaraju">
+                                <label for="name">Author Name</label>
+                            </div>
+                </div>
+                <div class="col l6">
+                        <div class="input-field">
+                                <input type="text" class="validate" value="Principal">
+                                <label for="name">Director - Corporate Affairs,HR Training & Placement,BGS Group of Institutions</label>
+                        </div>
+                </div>                
+        </div>
+
+        <div class="row">
+                <div class="col s12 input-field">
+                    <textarea name="" id="" class="materialize-textarea">
+                       
+                    </textarea>
+                    <label for="name">Message3</label>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col s12 input-field">
+                    <input type="text" value="http://rjss.org.in/images/nirmalanandanatha-swamiji.png" class="validate">
+                    <label for="name">Image url3</label>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col s6 l6">
+                <button class="btn blue">Update</button>
+            </div>
+            <div class="col s6 l6">
+                    <button class="btn right pink modal-close  ">close</button>
+            </div>
+         </div>
+      </div>
+   </div>   
+ </div>             <!--  row end--> 
+</div>     <!-- my college end -->
+
+<!-- end college -->
+
+<!-- start add college page -->
+<div id="myaddcollege">
+    <form action="#">
+    <div class="row">
+        <div class="col s12">
+            <h3>Add College</h3>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+                <div class="input-field">
+                        <select name="" id="">
+                                <option value=""disabled selected>Choose your option</option>
+                                <option value="1">Adichunchanagiri Institute of Technology</option>
+                                <option value="2">Adichunchanagiri Institute of Technology</option>
+                                <option value="3">Adichunchanagiri Institute of Technology</option>
+                                <option value="4">Adichunchanagiri Institute of Technology</option>
+                        </select>
+                        <label for="name">University (mandatory)</label>
+                </div>
+        </div>        
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+                <div class="input-field">
+                        <input type="text" class="validate">
+                        <label for="name">college name (mandatory)</label>
+                </div>
+        </div>        
+    </div>
+
+    <div class="row">
+            <div class="col s12">
+                    <div class="input-field">
+                            <input type="text" class="validate">
+                            <label for="name">college code (mandatory)</label>
+                    </div>
+            </div>        
+    </div>
+
+    <div class="row">
+            <div class="col s12">
+                    <div class="input-field">
+                            <input type="email" class="validate">
+                            <label for="name">Email</label>
+                    </div>
+            </div>        
+    </div>
+
+    <div class="row">
+            <div class="col s12">
+                    <div class="input-field">
+                            <input type="tel" class="validate">
+                            <label for="name">Phone</label>
+                    </div>
+            </div>        
+    </div>
+
+    
+    <div class="row">
+            <div class="col s12">
+                    <div class="input-field">
+                            <textarea name="" class="materialize-textarea"></textarea>
+                            <label for="name">Adress</label>
+                    </div>
+            </div>        
+    </div>
+
+    
+    <div class="row">
+            <div class="col s12">
+                    <div class="input-field">
+                            <textarea name="" class="materialize-textarea"></textarea>
+                            <label for="name">Description</label>
+                    </div>
+            </div>        
+    </div>
+
+    <div class="row">
+        <div class="col s6 l6">
+                <div class="switch">
+                        <label class="label-color">
+                            Inactive
+                            <input type="checkbox" name="status" id="status" checked="">
+                            <span class="lever"></span>
+                            Active
+                        </label>
+                </div>
+        </div>
+        <div class="col s6 l6">
+            <button class="btn waves-effect-waves-light pink pull-right">SAVE</button>
+        </div>        
+    </div>
+</form>
+</div>
+
+<!-- end for college add page -->
+
+<!-- start sudent form -->
+<div id="studentpage">
+    <div class="row">
+    <div class="col l6 m6 s12">
+        <div class="card-panel z-depth-3">
+            <div class="row">
+                <div class="col l12 m12 s12">
+                        <h4>Personal Details</h4>
+                        <hr>
+                </div>
+            </div>
+                
+            <div class="row">
+                <div class="col l6 m6 s12">
+                    <div class="input-field">
+                        <input type="text" value="4BWHSDHS12" disabled>
+                        <label for="name">USN</label>
+                    </div>
+                </div>
+                <div class="col l6 m6 s12">
+                        <div class="input-field">
+                            <select name="" id="">
+                                    <option value="" disabled selected>Choose your option</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Others</option>
+                            </select>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="input-field">
+                        <input type="text" value="ARCHANA B.M">
+                        <label for="name">Name(mandatory)</label>
+                    </div>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col s12 l12">
+                    <div class="input-field">
+                        <input type="email" name="" id="">
+                        <label for="email">Email(mandatory)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l6">
+                    <div class="input-field">
+                            <input type="text" class="datepicker">
+                            <label for="name">Date of Birth(mandatory)</label>
+                    </div>
+                </div>
+                <div class="col s12 m6 l6">
+                        <div class="input-field">
+                                <input type="tel">
+                                <label for="name">Phone(mandatory)</label>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m6 l6">
+            <div class="card-panel z-depth-3">
+                <div class="row">
+                    <div class="col s12 l12">
+                            <h4>PUC & SSLC Details</h4>
+                            <hr>
+                    </div>
+                </div>
+                    
+                
+                <div class="row">
+                    <div class="col s12 l12">
+                        <div class="input-field">
+                            <input type="text" value="">
+                            <label for="name">PUC School Name(optional)</label>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="row">
+                        <div class="col s12 l12">
+                            <div class="input-field">
+                                <input type="number" value="">
+                                <label for="name">PUC Marks(optional)</label>
+                            </div>
+                        </div>
+                </div>  
+
+                <div class="row">
+                        <div class="col s12 l12">
+                            <div class="input-field">
+                                <input type="text" value="">
+                                <label for="name">SSLC School Name (Optional)</label>
+                            </div>
+                        </div>
+                </div>  
+
+                <div class="row">
+                        <div class="col s12 l12">
+                            <div class="input-field">
+                                <input type="number" value="">
+                                <label for="name">SSLC Marks(optional)</label>
+                            </div>
+                        </div>
+                </div>  
+            </div>
+         </div>
+    </div>
+
+    <div class="row" style=" padding-bottom: 20px;">
+        <div class="col s12">
+            <div class="card-panel z-depth-4">
+                <div class="row">
+                    <div class="col s12">
+                            <h4>College Details</h4>
+                            <hr>
+                    </div>   
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                                <select>
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1">Option 1</option>
+                                        <option value="2">Option 2</option>
+                                        <option value="3">Option 3</option>
+                                      </select>
+                                      <label for="name">College(mandatory)</label>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                            <div class="input-field">
+                                    <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                          </select>
+                                          <label for="name">Branch(mandatory)</label>
+                            </div>
+                    </div> 
+                </div>
+
+                <div class="row">
+                        <div class="col s12 m6 l6">
+                            <div class="input-field">
+                                    <select>
+                                            <option value="" disabled selected>Choose your option</option>
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                          </select>
+                                          <label for="name">Semister(mandatory)</label>
+                            </div>
+                        </div>
+                        <div class="col s12 m6 l6">
+                                <div class="input-field">
+                                        <select>
+                                                <option value="" disabled selected>Choose your option</option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                                <option value="3">Option 3</option>
+                                              </select>
+                                              <label for="name">Section(mandatory)</label>
+                                </div>
+                        </div> 
+                </div>
+
+                <div class="row">
+                    <div class="col s12 l6">
+                        <div class="input-field">
+                            <input type="text">
+                            <label for="name">Semister1 Marks (optional)</label>
+                        </div>
+                    </div>
+                    <div class="col s12 l6">
+                            <div class="input-field">
+                                <input type="text">
+                                <label for="name">Semister2 Marks (Optional)</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input type="text">
+                                <label for="name">Semister3 Marks (Optional)</label>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                                <div class="input-field">
+                                    <input type="text">
+                                    <label for="name">Semister4 Marks (optional)</label>
+                                </div>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input type="text">
+                                <label for="name">Semister5 Marks (optional)</label>
+                            </div>
+                        </div>
+                        <div class="col s12 l6">
+                                <div class="input-field">
+                                    <input type="text">
+                                    <label for="name">Semister6 Marks (optional)</label>
+                                </div>
+                        </div>
+                </div>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col s12 L12">
+                <button class="btn pink waves-effect waves-light" style="width:100%;">SAVE</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- student form end -->
+<!-- mopdule page start -->
+
+<div id="modulepage" class="mymaincontainer" style="background:;" >
+    <div class="row" >
+        <div class="col s12">
+            <h3>Modules</h3>
+            <hr>
+        </div>
+    </div>    
+
+    <ul class="collapsible z-depth-4"  data-collapsible="accordion">
+
+    <li >
+        <div class="collapsible-header" > 
+            <i class="material-icons right">expand_less</i>
+                <strong>Add Module</strong>
+        </div>  
+
+        <div class="collapsible-body">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <select>
+                            <option value="" disabled selected>Choose your Option</option>
+                            <option value="1">Aptitude</option>
+                            <option value="2">Verbal</option>
+                            <option value="3">Soft Skill</option>
+                            <option value="4">Technical</option>
+                            <option value="5">Company Specific</option>
+                            <option value="6">In-depth Concept</option>
+                        </select>
+                        <label>Category (mandatory)</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12">
+                            <i class="material-icons prefix myprefix">collections</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Module Name(mandatory)</label>
+                    </div>
+                </div>
+
+                <div class="row">            
+                    <div class="col s12 input-field">
+                        <h5>Module Description</h5>
+                        <!-- <div class="excel s12"></div> -->
+                        <textarea name="" id="">
+
+                        </textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12 m4 l4">
+                        <div class="dropify-wrapper">
+                            <div class="dropify-message">
+                                <span class="file-icon">
+                                </span>
+                                    <p>Drag and drop a file here or click</p>
+                                    <p class="dropify-error">Sorry, this file is too large</p>
+                            </div>
+                            
+                            <input type="file" id="input-file-now-custom-3" class="dropify" data-height="500" data-default-file="">                                        <button type="button" class="dropify-clear">Remove</button>
+                            <div class="dropify-preview"><span class="dropify-render"></span>
+                                <div class="dropify-infos"><div class="dropify-infos-inner">
+                                    <p class="dropify-filename"><span class="file-icon"></span>
+                                            <span class="dropify-filename-inner"></span>
+                                        </p><p class="dropify-infos-message">Drag and drop or click to replace</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class=" col s12 m4 l4">
+                        <div class="row">
+                            <div class="col s12 input-field">
+                                    <select>
+                                            <option value="" disabled selected>Semister</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                        </select>
+                                        <label>Semister (mandatory)</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col s12 input-field">
+                                        <select>
+                                                <option value="" disabled selected>Choose your Course</option>
+                                                <option value="1">Engineering </option>
+                                                <option value="2">Management</option>
+                                                <option value="3">Diploma</option>
+                                                <option value="4">commerce</option>
+                                            </select>
+                                            <label>Course (mandatory)</label>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class=" col s12 m4 l4 ">
+                            <div class="row">
+                                <div class="col s12 input-field">
+                                        <select multiple>
+                                                <option value="" disabled selected>Branch</option>
+                                                <option value="1">CSE</option>
+                                                <option value="2">ISE</option>
+                                                <option value="3">ECE</option>
+                                                <option value="4">TCE</option>
+                                                <option value="5">EEE</option>
+                                                <option value="6">CIVIL 1</option>
+                                                <option value="7">MECH 1</option>
+                                                <option value="8">AERO</option>
+                                                <option value="9">CHEM</option>
+                                                <option value="10">MBA</option>
+                                                <option value="11">MCOM</option>
+                                                <option value="12">DCSE</option>
+                                                <option value="13">DISE</option>
+                                                <option value="14">DECE</option>
+                                                <option value="15">DTCE</option>
+                                                <option value="16">DEEE</option>
+                                                <option value="17">DCIVIL</option>
+                                                <option value="18">DMECH</option>
+                                                <option value="19">DAERO</option>
+                                                <option value="20">DCHEM</option>
+                                                <option value="21">MCA</option>
+                                            </select>
+                                            <label>Semister (mandatory)</label>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                    <div class="col s12 input-field">
+                                            <select name="type" id="type" required>
+                                                    <option value="" disabled selected>Type</option>
+                                                    <option value="j">Janus</option>
+                                                    <option value="p">Pragnyan</option>
+                                                </select>
+                                                <label>Type (mandatory)</label>
+                                    </div>
+                            </div>
+                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                        <div class="input-field">
+                            <input type="text" required>
+                            <label>Code (mandatory)</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s12">
+                            <button class="btn waves-effect waves-light pink" type="submit"  name="action">Save
+                                    <i class="material-icons right">save</i>
+                            </button>
+                    </div>
+                </div>
+            </div> <!----collapsible body-->
+    </li>    
+    </ul>      
+     <!-- student collasible body end -->
+     
+     <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+            <li class="tab col s6 "><a href="#pragnyan" class="cyan-text">Pragnyan Modules</a></li>
+            <li class="tab col s6"><a  href="#janus" class="cyan-text active">Janus Modules</a></li>
+            </ul>
+        </div>
+     </div>
+        <div id="pragnyan" class="row" style="padding-bottom:25px;">
+            <ul class="collection">
+                <li class="collection-item avatar">
+                        1.
+                        <a href="#"><span class="title">Advanced Speaking</span></a>
+                        <p> Semester: 3 <br>
+                        <p> Branches:CSE,EEE,ISE,CVIL  </p>    
+                </li>
+            </ul>
+        </div>
+        <div id="janus" class="row" style="padding-bottom:25px;">
+                <ul class="collection">
+                        <li class="collection-item avatar" >
+                                1.
+                                <a href="#  "><span class="title">Important skills for Mechanical Engineers to Succeed</span></a>
+                                <p> Semester: 3 <br>
+                                <p> Branches:EEE,ISE,CVIL,CS  </p>    
+                        </li>
+                </ul>
+        </div>           
+</div>
+
+
+<!-- test page start -->
+
+<div id="testpage" class="mymaincontainer">
+<div class="row">
+    <div class="col s12">
+            <h3>Tests</h3>
+            <hr>
+    </div>
+</div>
+    <ul class="collapsible white">
+        <li>
+            <div class="collapsible-header">
+                <strong> Add test</strong>
+               <i class="material-icons right">expand_less</i>
+            </div>
+            <div class="collapsible-body">
+                <div class="mycontainer">
+                    <form action="#">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="name" name="name" type="text" required>
+                                <label for="name">Test Name (mandatory)</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="input-field col s6">
+                                        <input id="start" name="start" type="text"  required>
+                                        <label for="start">Starts (mandatory)</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                        <input id="end" name="end" type="text" required>
+                                        <label for="end">Ends (mandatory)</label>
+                                </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="input-field col s4">
+                                    <input id="time_limit" name="time_limit" type="number" class="validate" required min="1">
+                                    <label for="time_limit">Time Limit in Mins(mandatory)</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input id="qualifying_percentage" name="qualifying_percentage" type="number" class="validate" required min="1">
+                                    <label for="qualifying_percentage">Passing Percentage (mandatory)</label>
+                                </div>
+                                <div class="input-field col s4">
+                                    <input id="total_questions" name="total_questions" type="number" class="validate" min="1">
+                                    <label for="total_questions">No. Of. Questions</label>
+                                </div>
+                        </div> 
+                        <div class="row">
+                                <div class="input-field col s6">
+                                        <input id="max_attempts" name="max_attempts" type="number" class="validate" min="1">
+                                        <label for="max_attempts">Max Attempts</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <select id="type" name="type" required>
+                                        <option value="" disabled selected>Assessment Type</option>
+                                        <option value="Pre Assessment">Pre Assessment</option>
+                                        <option value="Internal 1">Internal 1</option>
+                                        <option value="Internal 2">Internal 2</option>
+                                        <option value="Internal 3">Internal 3</option>
+                                        <option value="Internal 4">Internal 4</option>
+                                        <option value="Internal 5">Internal 5</option>
+                                        <option value="Internal 6">Internal 6</option>
+                                        <option value="Internal 7">Internal 7</option>
+                                        <option value="Internal 8">Internal 8</option>
+                                        <option value="Internal 9">Internal 9</option>
+                                        <option value="Internal 10">Internal 10</option>
+                                        <option value="Overall Assessment">Overal Assessment</option>
+                                        <option value="Janus Pre Assessment">Janus Pre Assessment</option>
+                                    </select>
+                                    <label for="max_attempts">Type</label>
+                                </div>
+                         </div>
+
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <span class="grey-text">Instructions</span><br>
+                                <textarea id="instructions" name="instructions" required></textarea>    
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col s12 input-field">
+                                    <select multiple>
+                                            <option value="" disabled selected>Choose Class</option>
+                                            <option value="1">AIT - Sem 2 - CSE - Section A</option>
+                                            <option value="2">AIT -Sem 2 - CSE - Section B</option>
+                                            <option value="1">AIT - Sem 2 - CSE - Section C</option>
+                                            <option value="2">AIT Sem 2 - CSE - Section D</option>
+                                    </select>
+                                    <label>Classes  (mandatory)</label>
+                            </div>
+                        </div>
+
+                        <div class="row grey lighten-2">
+                            <div class="col s12" style="padding:15px;">
+                                    <h5>Questions (0)<hr></h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col s6 m4">
+                                <a  class="modal-trigger" href="#questionsModal1">
+                                    1.Important skills for Engineers to Succeed </a><hr>
+                            </div>
+                            
+                            <div class="col m4">
+                                    <a  class="modal-trigger" href="#questionsModal1">
+                                    Accenture </a><hr>
+                            </div> 
+                            
+                            <div class="col m4">
+                                    <a  class="modal-trigger" href="#questionsModal1">
+                                    Advance speaking </a><hr>
+                            </div>   
+                        </div>
+<!-- for modal strcture for question(0) -->
+<div id="questionsModal1" class="modal">
+    <div class="modal-content">
+        <h5>1.Important skills for Mechanical Engineers to Succeed</h5>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                        <li class="tab col s3"><a class="active" href="#questionsHolder1Easy">Easy</a></li>
+                        <li class="tab col s3"><a href="#questionsHolder1Medium">Medium</a></li>
+                        <li class="tab col s3"><a href="#questionsHolde1Hard">Hard</a></li>
+                        <li class="tab col s3"><a href="#questionsHolder1Others">Others</a></li>
+                </ul>
+            </div>
+
+            <div id="questionsHolder1Easy" class="col s12">
+                    <ul class="collection">
+                            <li class="collection-item">
+                                    <input type="checkbox" class="" id="test1">
+                                    <label for="test1"> What is the scope of typedef defined data types? <b>233</b>  <i>(E)</i></label>
+                            </li>
+
+                            <li class="collection-item">
+                                    <input type="checkbox" class=""  id="test2">
+                                    <label for="test2"> What is the scope of typedef defined data types? <b>233</b>  <i>(E)</i></label>
+                            </li>
+
+                            <li class="collection-item">
+                                    <input type="checkbox" class="questionCheckBox" id="test3" >
+                                    <label for="test3"> What is the scope of typedef defined data types? <b>233</b>  <i>(E)</i></label>
+                            </li>
+                            <li class="collection-item">
+                                    <input type="checkbox" class="" id="test4">
+                                    <label for="test4"> Pick out the correct statement <b>233</b>  <i>(E)</i></label>
+                            </li>
+                    </ul> 
+            </div>
+
+            <div id="questionsHolder1Medium" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <input type="checkbox" name="" id="question1">
+                            <label for="question1">What is your name?</label>
+                        </li>
+
+                        <li class="collection-item">
+                                <input type="checkbox" name="" id="question2">
+                                <label for="question2">What is your name?</label>
+                        </li>
+
+                        <li class="collection-item">
+                                <input type="checkbox" name="" id="question3">
+                                <label for="question3">What is your name?</label>
+                        </li>
+                    </ul> 
+            </div>
+
+            <div id="questionsHolde1Hard" class="col s12">
+                    <ul class="collection">
+                        <li class="collection-item">
+                            <input type="checkbox" name="" id="question4">
+                            <label for="question4">What is javascript?</label>
+                        </li>
+                    </ul> 
+            </div>
+
+            <div id="questionsHolder1Others" class="col s12">
+                    <ul class="collection">
+                            <li class="collection-item">
+                                    <input type="checkbox" name="" id="question5">
+                                    <label for="question5">What is css?</label>
+                            </li>
+                    </ul> 
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+</div>
+<!-- modal strcture end -->
+                            <div class="row">
+                                <div class="col s6">
+                                    <div class="switch">
+                                        <label>
+                                            Off
+                                            <input type="checkbox">
+                                            <span class="lever"></span>
+                                            On
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col s6">
+                                    <button class="btn waves-effect waves-light pink right" type="submit" name="action">Save</button>
+                                </div>
+                            </div>
+
+                     </form>  
+                 </div>
+             </div>
+        </li>
+    </ul>
+    <!-- for tabs -->
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs">
+                <li class="tab col s6"><a href="#active" style="color:#00bcd4;">ACTIVE</a></li>
+                <li class="tab col s6"><a href="#inactive" style="color:#00bcd4;">INACTIVE</a></li>
+            </ul>
+        </div>
+    </div> 
+
+        
+        <div class="row white">
+            <div id="active" class="col s12 ">
+                <table class="bordered responsive-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Test</th>
+                                <th>Opens</th>
+                                <th>Closes</th>
+                                <th>Pass Marks(%)</th>
+                                <th>Max Attempts</th>
+                                <th>Time Limit</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td><a href="#">Internal 1 | SVIT | Sem:6 | EEE | Section: A</a></td>
+                                <td>Jan 01 70, Thu 05:30 am</td>
+                                <td>Jan 01 70, Thu 05:30 am</td>
+                                <td>70</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td><a href="#"  class="right tooltipped" data-position="top" data-delay="50" data-tooltip="Delete Assessment" data-tooltip-id=""><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td><a href="#" style="font-size:14px;"">Internal 1 | SVIT | Sem:6 | EEE | Section: A</a></td>
+                                <td>Jan 01 70, Thu 05:30 am</td>
+                                <td>Jan 01 70, Thu 05:30 am</td>
+                                <td>70</td>
+                                <td>1</td>
+                                <td>60</td>
+                                <td><a href="#"  class="right tooltipped" data-position="top" data-delay="50" data-tooltip="Delete Assessment" data-tooltip-id=""><i class="fa fa-trash"></i></a></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="row white">
+                <div id="inactive" class="col s12 ">
+                    <table class="bordered ">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Test</th>
+                                    <th>Opens</th>
+                                    <th>Closes</th>
+                                    <th>Pass Marks(%)</th>
+                                    <th>Max Attempts</th>
+                                    <th>Time Limit</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                    
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td><a href="#">Internal 1 | SVIT | Sem:6 | EEE | Section: A</a></td>
+                                    <td>Jan 01 70, Thu 05:30 am</td>
+                                    <td>Jan 01 70, Thu 05:30 am</td>
+                                    <td>70</td>
+                                    <td>1</td>
+                                    <td>60</td>
+                                    <td><a href="#"  class="right tooltipped" data-position="top" data-delay="50" data-tooltip="Delete Assessment" data-tooltip-id=""><i class="fa fa-trash"></i></a></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+</div>
+
+<!-- for question page -->
+
+<div id="questionpage" class="mymaincontainer">
+    <div class="row">
+        <div class="col s12">
+            <h4 class="fnt-family">Questions</h4>
+            <hr>
+        </div>
+    </div>
+
+    <ul class="collapsible white">
+            <li>
+                <div class="collapsible-header">
+                    <strong> Add Question</strong>
+                   <i class="material-icons right">expand_less</i>
+                </div>
+                
+                <div class="collapsible-body">
+                    <div class="mycontainer">
+                            <div class="row">
+                                <div class="col s12 m6 l6 input-field">
+                                    <select name="category" id="category" required>
+                                            <option value="" disabled selected>Choose your option</option>
+                                                    <option value="1">Aptitude</option>
+                                                    <option value="2">Verbal</option>
+                                                    <option value="3">Soft Skills</option>
+                                                    <option value="4">Technical</option>
+                                                    <option value="5">Company Specific</option>
+                                                    <option value="6">In-depth Concept</option>
+                                    </select>
+                                        <label>Category (mandatory)</label>
+                                </div>
+
+                                <div class="col s12 m6 l6 input-field">
+                                        <select name="type" id="type" required>
+                                                <option value="" disabled selected>Choose your option</option>
+                                                        <option value="E">EASY</option>
+                                                        <option value="M">MEDIUM</option>
+                                                        <option value="H">HARD</option>
+                                                        <option value="O">OTHERS</option>
+                                         </select>
+                                         <label>Type (mandatory)</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s12 input-field">
+                                        <select name="" id="" required>
+                                                <option value="" disabled selected>Choose your option</option>
+
+                                                        <option value="1">Accenture</option>
+                                                        <option value="2">Verbal</option>
+                                                        <option value="3">Algebra(Janus)</option>
+                                                        <option value="4">Analogies(Janus)</option>
+                                                        <option value="5">Aricent(Janus)</option>
+                                                       
+
+                                        </select>
+                                            <label>Category (mandatory)</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h5>Question</h5>
+                                    <textarea id="" name="question" class="" required=""></textarea>
+                            </div>
+                            <div class="row">
+                                    <h5>Options</h5>
+                                        <textarea id="question" name="question" class="validate" required=""></textarea>
+                            </div>
+                            <div class="row">
+                                    <input class="with-gap" name="correct" type="radio"  id="1">
+                                    <label for="1">Correct Answer</label>
+                                    <textarea id="option1" name="" class="validate" required=""></textarea>
+
+                                    <input class="with-gap"  name="correct" type="radio"  id="2">
+                                    <label for="2" class="">Correct Answer</label>
+                                    <textarea id="option2" name="" type="text" class="validate option" required=""></textarea>
+                                    
+                                    <input class="with-gap"  type="radio" name="correct" id="3">
+                                    <label for="3">Correct Answer</label>
+                                    <textarea name="" id="option3" ></textarea>
+
+                                    <input class="with-gap"  name="correct" type="radio" id="4" />
+                                    <label for="4">Correct Answer</label>
+                                    <textarea name="" id="option4" ></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    <button class="btn pink">SAVE</button>
+                                </div>
+                            </div>                         
+                     </div>
+                </div>
+            </li>
+    </ul>
+<!-- for  question modules -->
+    <ul class=" white collection">
+        <div class="row ">
+                <div class="col s12">
+                    <h5 class="fnt-family">Modules</h5>
+                    
+                </div>
+        </div>
+
+        <div class="row ">
+
+            <div class="col m4 l4 border-grey">
+                <a href="#"><span>C </span></a>
+                <span>(Technical)</span>
+                <span class="task-cat blue  ">(Janus)</span>
+                <span class="task-cat purple lighten-1 ">Q: 0</span>
+            </div>
+            <div class="col s12 m4 l4 border-grey">
+                    <a href="#"><span>Accenture</span></a>
+                    <span>(Company  Specific)</span>
+    
+                    <span class="task-cat blue">(Janus)</span>
+                    <span class="task-cat purple lighten-1">Q: 0</span>
+            </div>
+
+            <div class="col s12 m4 l4 border-grey">
+                    <a href="#"><span>Advanced Speaking</span></a>
+                    <span>(Verbal)</span>
+    
+                    <span class="task-cat pink  text-darken-2 border-grey-1 border-radius-2">(Pragnyan)</span>
+                    <span class="task-cat purple">Q: 0</span>                                         
+            </div>
+            
+        </div>   
+    </ul>
+</div>
+<!-- for question page end -->
+
+
+
+<!-- for Schedule module -->
+<div id="Schedulepage" class="mymaincontainer">
+    <div class="row">
+        <div class="col s12">
+            <h4 class="fnt-family">Schedule - Upload</h4>
+            <hr style="border-bottom:2px solid rgb(201, 198, 198);">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <ul class="tabs" style="overflow:hidden;">
+                <li class="tab col s6"><a href="#Janusschedule" class="cyan-text">Janus Schedule</a></li>
+                <li class="tab col s6"><a  href="#Pragnyanschedule" class="cyan-text">Pragnyan Schedule</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="Janusschedule" class="col s12">
+        <div class="row">
+            <div class="col s12">
+                <h4>Janus Schedule 
+                    <a class="btn-floating btn-large waves-effect waves-light red pull-right tooltipped btn  modal-trigger"  data-position="left" data-delay="50" data-tooltip="Add Janus Schedule" href="#janumodal"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                </h4>
+                <hr> 
+            </div>
+<!-- Modal Structure start for janu -->
+<div id="janumodal" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12">
+                    <h4>Add Janus Schedule</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                    <div class="input-field col s12">
+                        <input type="text" class="datepicker" name="date">
+                        <label for="name">Date</label>
+            </div>
+
+            <div class="row">
+                    <div class="input-field col s12">
+                            <select class="" name="trainer" required>
+                                <option value="" disabled selected>Choose Trainer</option>
+                                <option value="6849"> Yanamala Suresh</option>
+                                <option value="36026">Abbas</option>
+                                <option value="6846">Abhilash Varma</option>
+                                <option value="5471">Anantaraman Chandramouli </option>
+                                <option value="36013">Andrew .G</option>
+                                <option value="5469">Anirudha Desai</option>
+                            </select>
+                            <label>Trainer</label>
+                    </div>
+            </div>
+
+            <div class="row">
+                    <div class="input-field col s12">
+                            <select class="" name="slot">
+                                <option value="" disabled selected> Choose Janus Slot</option>
+                                <option value="1">1. 09:00:00 - 11:00:00</option>
+                                <option value="2">2. 11:10:00 - 13:15:00</option>
+                                <option value="3">3. 14:00:00 - 16:00:00</option>
+                            </select>
+                            <label>Slot</label>
+                    </div>
+            </div>
+
+            <div class="row">
+                    <div class="input-field col s12">
+                            <select class="form-control input-sm" name="module">
+                                <option value="" disabled selected> Choose Janus Module</option>
+                                <option value="241">5 Important skills for Mechanical Engineers to Succeed</option>
+                                <option value="221">Accenture</option>
+                                <option value="262">Advanced Speaking</option>
+                                <option value="262">Advanced Speaking</option>
+                            </select>
+                            <label>Module</label>
+                    </div>
+            </div>
+
+            <div class="row">
+                    <div class="col s12 input-field">
+                            <select class="" name="janus_batches">
+                                    <option value="" disabled selected> Choose Janus Module</option>
+                                    <option value="241">5 Important skills for Mechanical Engineers to Succeed</option>
+                                    <option value="221">Accenture</option>
+                                    <option value="262">Advanced Speaking</option>
+                                    <option value="262">Advanced Speaking</option>
+                                    <label>Batches</label>
+                                </select>
+    
+                    </div>
+            </div>
+    
+            <div class="row">
+                <div class="col s12">
+                        <button type="reset" value="Reset" class="btn pink waves-effect">Save</button>
+                </div> 
+            </div>
+            
+
+        </div>
+
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+</div>
+<!-- Modal Structure end for janu -->
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-content hoverable">
+                        <span class="task-cat cyan white-text border-radius-2">2018-11-24</span>
+
+                        <div class="border-bottom-grey">
+                            <span class="task-cat green white-text border-radius-2">Slot:1</span>
+                            <span class="task-cat white grey-text text-darken-2 border-radius-2 ">09:00:00 - 11:00:00</span>
+                            <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Batch asv-1</span>
+                            <span class="task-cat white grey-text text-darken-2 white-textborder-radius-2 ">Number Theory</span>
+                            <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Trainer : Sai Kumar</span>
+                        </div>
+
+                        <div class="border-bottom-grey">
+                                <span class="task-cat green white-text border-radius-2">Slot:1</span>
+                                <span class="task-cat white grey-text text-darken-2 border-radius-2">09:00:00 - 11:00:00</span>
+                                <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Batch asv-1</span>
+                                <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Number Theory</span>
+                                <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Trainer : Sai Kumar</span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="col s12 m6 l6">
+                    <div class="card">
+                        <div class="card-content hoverable">
+                            <span class="task-cat cyan white-text border-radius-2">2018-11-25</span>
+    
+                            <div class="border-bottom-grey">
+                                <span class="task-cat green white-text border-radius-2">Slot:1</span>
+                                <span class="task-cat white grey-text text-darken-2 border-radius-2">09:00:00 - 11:00:00</span>
+                                <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Batch asv-1</span>
+                                <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Number Theory</span>
+                                <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Trainer : Sai Kumar</span>
+                            </div>
+    
+                            <div class="border-bottom-grey">
+                                    <span class="task-cat green white-text border-radius-2">Slot:1</span>
+                                    <span class="task-cat white grey-text text-darken-2 border-radius-2">09:00:00 - 11:00:00</span>
+                                    <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Batch asv-1</span>
+                                    <span class="task-cat white grey-text text-darken-2 white-text border-radius-2">Number Theory</span>
+                                    <span class="task-cat white grey-text text-darken-2 white-text border-radius-2 ">Trainer : Sai Kumar</span>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div id="Pragnyanschedule" class="col s12">
+            <div class="row">
+                    <div class="col s12">
+                        <h4>Pragnyan Schedule 
+                            <a class="btn-floating btn-large waves-effect waves-light red pull-right tooltipped btn"  data-position="left" data-delay="50" data-tooltip="Add Pragnyan Schedule" href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
+         
+                        </h4>
+                        <hr> 
+                    </div>
+            </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<!--  -->
+</div>
+</main>
+
+
+
+
+<footer class="page-footer  footer-fixed">
+        <div class="footer-copyright" style="background:#00bcd4;padding:0 !important;">
+           <div class="myfootercontainer" style="background: #00bcd4;">
+            <a href="privacy.html" class="white-text"><i class="fa fa-user-secret"></i> Privacy &amp; Terms</a> &nbsp;| &nbsp;
+            <a href="termsuse.html" class="white-text"><i class="fa fa-unsorted"></i> Terms of Use</a> &nbsp;| &nbsp;
+            <a href="termscondition.html" class="white-text"><i class="fa fa-asterisk"></i> Terms & Conditions </a>
+            <a href="https://zestech.in/" class="white-text myfooter-logo"> <img src="../image/logo-white.png" alt="" style="position:relative;top:12px;height:35px;"
+                    class="responsive-img"></a>
+            <p class="myfooterhide" class="white-text ">Copyright © 2018 <a href="#" class="grey-text">Zlearn</a> All
+                Rights Reserved</p>
+        </div>
+        </div>
+</footer>
+
+
+
+
+
+
+
+
+
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+     <script>
+            $(document).ready(function(){
+                $('.dropdown-button').dropdown(
+                    {
+                        hover:true
+                    });
+                $('.dropdown-profilebutton').dropdown();
+                $(".button-collapse").sideNav();
+                $('.dropdown-trigger').dropdown();
+                $('.collapsible').collapsible();
+                $('.modal').modal({
+                    opacity:0.2,
+                    inDuration:400,
+                    outDuration:100, 
+                    startingTop:'100%',
+                    endingTop:'10%',
+                    dismissible:true
+                    });
+                $('#textarea1').val('New Text');
+                $('#textarea1').trigger('autoresize');
+                $('select').material_select();
+                // for data picker
+                $('.datepicker').pickadate({
+                    selectMonths: true, // Creates a dropdown to control month
+                    selectYears: 15, // Creates a dropdown of 15 years to control year,
+                    today: 'Today',
+                    clear: 'Clear',
+                    close: 'Ok',
+                    closeOnSelect: false
+                 });
+                 $('ul.tabs').tabs();
+            });
+     </Script>
+
+   <script>
+    $(document).ready(function(){ 
+        $("#university").click(function(){
+            $("#myuniversity").css("display","block");
+            $("#mycollege,#myaddcollege,#studentpage,#modulepage,#testpage,#questionpage,#Schedulepage").css("display","none");
+         });
+         $('#college').click(function(){
+             $('#mycollege').css("display","block");
+             $('#myuniversity,#myaddcollege,#studentpage,#modulepage,#testpage,#questionpage,#Schedulepage').css("display","none");
+         });
+         $('#addcollege-btn').click(function(){
+             $('#myaddcollege').css("display","block"); 
+             $('#myuniversity,#mycollege,#studentpage,#modulepage,#testpage,#questionpage,#Schedulepage').css("display","none");
+
+         });
+         $('#studentform').click(function(){
+             $('#studentpage').css("display","block"); 
+             $('#myuniversity,#mycollege,#myaddcollege,#modulepage,#testpage,#questionpage,#Schedulepage').css("display","none");
+
+         });
+         $('#module').click(function(){
+             $('#modulepage').css("display","block"); 
+             $('#myuniversity,#mycollege,#myaddcollege,#studentpage,#testpage,#questionpage,#Schedulepage,#Schedulepage').css("display","none");
+
+         });
+         $('#test').click(function(){
+             $('#testpage').css("display","block"); 
+             $('#myuniversity,#mycollege,#myaddcollege,#studentpage,#modulepage,#questionpage,#Schedulepage').css("display","none");
+
+         });
+         $('#question').click(function(){
+             $('#questionpage').css("display","block"); 
+             $('#myuniversity,#mycollege,#myaddcollege,#studentpage,#modulepage,#testpage,#Schedulepage').css("display","none");
+
+         });
+         
+         $('#Schedule').click(function(){
+             $('#Schedulepage').css("display","block"); 
+             $('#myuniversity,#mycollege,#myaddcollege,#studentpage,#modulepage,#testpage,#questionpage').css("display","none");
+
+         });
+        }); 
+</Script>
+</body>
+</html>

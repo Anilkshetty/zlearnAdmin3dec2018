@@ -1,0 +1,463 @@
+body
+{
+    background-image: url(../image/back.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* foe custom style */
+.fnt-family
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(87, 82, 82);
+}
+.mycontainer
+{
+    width:98%;
+    margin:auto;
+}
+
+.myProfileImage
+{
+    height:30px !important;
+    margin-top:18px !important;
+    padding:0;
+    margin:0;
+}
+/* for removing searchbar border */
+
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: none;
+    -webkit-box-shadow: 0 1px 0 0 #2a2e2e;
+    box-shadow: 0 1px 0 0 #1a1617;
+}
+/* for sidenav */
+.mysidenav
+ {
+  width:240px;
+  margin-top:64px;
+  overflow:auto;
+ }
+ /* dropdown strucutre for profile */
+ .dropdown-profile
+ {
+    position: absolute;
+    right:00; 
+    min-width:250px;
+    margin-top:63px;
+ }
+ /* dropdown strucure fo notification */
+ .dropdown-notification
+ {
+    min-width:300px;
+    margin-top:64px;
+ }
+ /* for search bar color */
+ #search
+ {
+    border-radius:10px;
+    background:rgb(165, 160, 160);
+ }
+ #search:hover
+ {
+     background: white;
+     color:black;
+ }
+ .mysidenav
+ {
+    margin-top:64px;
+ }
+  
+ /* for fontawsome icon */
+ .myicon
+{
+font-size: 25px;
+color:rgb(77, 74, 74) !important;
+}
+.main-icon
+{
+    font-size: 18px;
+    color:rgb(255, 255, 255) !important;
+
+}
+.side-nav li.active {
+    background-color: red;
+}
+.side-nav a.active {
+    background-color:pink;
+}
+/* for scroll bar */
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+        background-color: #F5F5F5;
+    }
+    
+    
+        
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: #26c6da;
+    }
+    
+    
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        background-color: #F5F5F5;
+    }
+/* end for scroll bar */
+
+/* scroll bar for  */
+
+      /* width */
+      .mysidenav::-webkit-scrollbar {
+        width: 3px;
+        height: 8px;
+        background-color: white;
+    }
+     
+    /* Handle */
+    .mysidenav::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: white;
+    }
+    
+    
+    .mysidenav::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        background-color: #26c6da;
+    }
+
+/* for main div */
+
+.main
+   {
+    padding-left: 270px;
+   }
+ .myfootercontainer
+ {
+     padding-left:270px;
+     
+ }
+ 
+   .mymaincontainer
+   {
+       width:98%;
+       margin:auto;
+   }
+   .modal {
+    display: none;
+    position: fixed;
+    left: 100;
+    right: 0;
+    background-color: #fafafa;
+    padding: 0;
+    max-height: 70%;
+    width: 70%;
+    margin: auto;
+    overflow-y: auto;
+    border-radius: 2px;
+    will-change: top, opacity;
+  }
+  #myuniversity
+  {
+      display: none;
+  }
+/* for college cards */
+
+.mycard-content
+{
+    padding: 12px !important;
+}
+
+/* for college page */
+#mycollege
+{
+    display: none;
+}
+
+/* for addcollege page */
+#myaddcollege 
+{
+    display: none;
+
+}
+#studentpage
+{
+    display: none;
+
+}
+/* for data picker */
+.picker--opened .picker__frame {
+    top: 10%;
+}
+.picker__wrap {
+    
+    width: 90%;
+    height: 100%;
+}
+.picker__date-display {
+    background-color: #ff4081;
+    color: #fff;
+   
+}
+.card-panel
+{
+    padding: 5px;
+}
+/*for modulepage input field*/
+/* .input-field .prefix {
+    position: absolute;
+    width: 3rem;
+    font-size: 2rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    left: 0;
+} */
+
+.excel
+{
+    background-image: url(../image/icon.gif);
+    width:100%;
+    height:18px;
+    background-repeat: no-repeat;
+    border:1px solid rgb(138, 134, 134);
+    border-bottom: none;
+}
+/* for collapsible icon */
+.collapsible li.active i {
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+  }
+  /* for module page icon */
+  .myprefix 
+  {
+      margin-left: -20px;
+  }  
+
+
+/* for footer */
+
+.ember-view {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    min-height:82.5vh;
+    flex: 1 0 auto;
+  }
+
+
+
+ .myfootercontainer
+  {
+     width:100%;
+     margin:auto;
+     
+  }
+
+ 
+ .myfooterhide
+ { 
+     float:right;
+ }
+
+ footer.page-footer 
+ {
+    padding-top: 0px;
+    position: relative;
+    z-index: 0;
+}
+
+.collapsible-body 
+{
+    
+    padding: 1rem;
+
+}
+/* for module page */
+#modulepage
+{
+    display:none;
+}
+
+/* for test page */
+
+#testpage
+{
+    display: none;
+}
+
+
+/* for test page table */
+td, th 
+{
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+/* for question page  */
+.task-cat {
+    padding: 2px 4px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.68rem;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-clip: padding-box;
+    border: 1px solid rgb(103, 103, 104);
+}
+.border-grey
+{
+    border:1px solid rgb(204, 201, 201);
+    border-left: none;
+    border-right: none;
+}
+/* for question page */
+#questionpage
+{
+    display: none;
+}
+/* for schedule */
+
+.border-bottom-grey
+{
+    border-bottom:1px solid rgb(194, 186, 186);
+
+}
+.border-radius-2
+{
+    border-radius: 3px !important;
+}
+#Schedulepage
+{
+    display:none;
+}
+
+
+
+
+@media only screen and (max-width:600px)
+{
+body 
+{
+   
+}
+.myProfileImage
+{
+    height:30px !important;
+    margin-top:14px !important;
+}
+.dropdown-profile
+{
+    margin-top:57px;
+}
+.dropdown-notification
+ {
+    
+    margin-top:58px;
+ }
+ .mysidenav
+ {
+    margin-top:57px;
+    width:200px !important;
+ }
+ 
+ 
+}
+/* for footer */
+@media only screen and (max-width:768px)
+ {
+     body
+     {
+       
+     }
+     .myfooterhide
+     {
+         display:none;
+         float:none;
+     }
+     .myfooter-logo
+     {
+         display:none;
+     }
+     .myfootercontainer
+     {
+        width:90%;
+        margin:auto;
+        text-align: center;
+     }
+ }
+@media only screen and (max-width : 992px) {
+    body 
+     {
+      background: ;
+    }
+    .main
+    {
+      padding-left: 0;
+    }
+    .myfootercontainer
+    {
+        padding-left: 0;
+    }
+   
+    .modal {
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        background-color: #fafafa;
+        padding: 0;
+        max-height: 70%;
+        width: 90%;
+        margin: auto;
+        overflow-y: auto;
+        border-radius: 2px;
+        will-change: top, opacity;
+      }
+      .myfootercontainer
+      {
+         margin:auto;
+         text-align: center;
+      }
+      /* for label colr */
+      .label-color
+      {
+          color:white;
+          font-size: 13px;
+      }
+  }
+ @media only screen and (max-width : 1080px) {
+    body 
+     {
+      background:;
+    }
+    .myfooterhide
+    {
+        display:none;
+        float:none;
+    }
+    .myfootercontainer
+     {
+        width:90%;
+        margin:auto;
+      
+     }
+  }
+
